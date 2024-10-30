@@ -4,4 +4,4 @@
 
 ## Установка
 
-Передите по [это ссылке](https://github.com/yuriyProgg/rest-timer/releases/) для скачивания приложения.
+Передите по [этой ссылке](https://github.com/yuriyProgg/rest-timer/releases/) для скачивания приложения.
