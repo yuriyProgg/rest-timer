@@ -10,12 +10,12 @@ export const Layout = () => {
   const [isP, setIsP] = useState(false);
   useEffect(() => {
     isPaused(cookies.currentTime).then((value) => setIsP(value));
+    if (location.pathname !== "/" && isP)
+      sendNotify(
+        "Предупреждение!",
+        "Таймер приостановлен. Вернитесь на главную страницу чтобы работал таймер!",
+      );
   }, [isP]);
-  if (location.pathname !== "/" && isP)
-    sendNotify(
-      "Предупреждение!",
-      "Таймер приостановлен. Не переходите на главную страницу чтобы работал таймер!",
-    );
 
   return (
     <>
